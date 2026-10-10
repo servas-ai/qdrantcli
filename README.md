@@ -2,6 +2,16 @@
 
 Kleines CLI, mit dem deine Harness (Claude Code, Codex, …) die Qdrant-Instanz der Firma abfragt – **mit deinem eigenen Token**. Was du sehen darfst, bestimmt allein dein Token (JWT oder API-Key). Eine einzelne Binärdatei ohne Abhängigkeiten, für Windows, macOS und Linux.
 
+## Voraussetzungen
+
+| Was | Wofür |
+| --- | --- |
+| URL der Qdrant-Instanz der Firma | Verbindung (oft nur im Büro oder per VPN erreichbar) |
+| Persönlicher Qdrant-Token (API-Key oder JWT) | Rechte kommen aus diesem Token |
+| für `search` mit Text: Embedding-Endpunkt (OpenAI-kompatibel) oder Qdrant-Server-Inferenz | dasselbe Modell, mit dem die Collections gefüllt wurden |
+
+Betriebssysteme: Windows 10/11, macOS 12+, Linux (amd64/arm64). Keine weiteren Laufzeitabhängigkeiten (ein einzelnes Go-Programm).
+
 ## Installation
 
 1. Passendes Archiv aus dem Release herunterladen:
